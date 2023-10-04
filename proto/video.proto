@@ -1,0 +1,15 @@
+syntax = "proto3";
+option java_multiple_files = true;
+package org.zoupi.video;
+service GetVideoToFragmentation {
+    rpc Get(GetVideoToFragmentationRequest) returns (GetVideoToFragmentationResponse);
+}
+message GetVideoToFragmentationRequest {
+    string id = 1;
+}
+message GetVideoToFragmentationResponse {
+    string id_author = 1;
+    string id_video = 2;
+    string url_video = 3;
+    string category = 4;
+}

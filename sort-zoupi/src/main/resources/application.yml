@@ -1,0 +1,19 @@
+server:
+  port: 4454
+eureka:
+  client:
+    service-url:
+      defaultZone: http://192.168.49.2:31508/eureka
+spring:
+  application:
+    name: sort
+  data:
+    mongodb:
+      uri: mongodb+srv://ducanhtop1global:ducanhtop1global@zoupi.ml4hk63.mongodb.net/zoupi-lite
+    redis:
+      password: 3OdJ8zINf1
+  kafka:
+    bootstrap-servers:
+      - "localhost:29092"
+    consumer:
+      auto-offset-reset: earliest

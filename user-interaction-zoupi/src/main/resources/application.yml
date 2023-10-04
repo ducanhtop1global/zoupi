@@ -1,0 +1,11 @@
+
+server:
+  port: 4449
+spring:
+  application:
+    name: pickup-zoupi
+  data:
+    mongodb:
+      uri: mongodb+srv://ducanhtop1global:ducanhtop1global@zoupi.ml4hk63.mongodb.net/zoupi-get
+    redis:
+      password: 3OdJ8zINf1

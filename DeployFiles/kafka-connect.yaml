@@ -1,0 +1,38 @@
+apiVersion: kafka.strimzi.io/v1beta2
+kind: KafkaConnect
+metadata:
+  name: kafka-connect-cluster-zoupi
+spec:
+  # ...
+  bootstrapServers: kafka-zoupi-bootstrap:9092
+  resources:
+    requests:
+      cpu: 12
+      memory: 64Gi
+    limits:
+      cpu: 12
+      memory: 64Gi
+  logging:
+    type: inline
+    loggers:
+      connect.root.logger.level: INFO
+  readinessProbe:
+    initialDelaySeconds: 15
+    timeoutSeconds: 5
+  livenessProbe:
+    initialDelaySeconds: 15
+    timeoutSeconds: 5
+  jvmOptions:
+    "-Xmx": "2g"
+    "-Xms": "2g"
+  template:
+    pod:
+      affinity:
+        nodeAffinity:
+          requiredDuringSchedulingIgnoredDuringExecution:
+            nodeSelectorTerms:
+              - matchExpressions:
+                  - key: node-type
+                    operator: In
+                    values:
+                      - fast-network

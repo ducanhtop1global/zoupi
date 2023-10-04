@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/compressor-zoupi/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/coordinator-zoupi/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/demo/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/discovery-zoupi/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/gateway-zoupi/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/marshaller-zoupi/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/pickup-zoupi/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sort-zoupi/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/tags-zoupi/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/user-interaction-zoupi/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/user-zoupi/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/video-zoupi/src/main/java" charset="UTF-8" />
+  </component>
+</project>

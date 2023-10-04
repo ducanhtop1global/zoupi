@@ -1,0 +1,36 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: discovery-zoupi
+  name: discovery-zoupi
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: discovery-zoupi
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: discovery-zoupi
+    spec:
+      containers:
+      - image: kaitokito/discovery-zoupi
+        name: discovery-zoupi
+        resources: {}
+status: {}
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: discovery-zoupi
+spec:
+  selector:
+    app: discovery-zoupi
+  ports:
+    - port: 4444
+      targetPort: 4444
+  type: LoadBalancer

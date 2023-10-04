@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="discovery-zoupi" />
+        <module name="video-zoupi" />
+        <module name="sort-zoupi" />
+        <module name="tags-zoupi" />
+        <module name="user-zoupi" />
+        <module name="pickup-zoupi" />
+        <module name="coordinator-zoupi" />
+        <module name="marshaller-zoupi" />
+        <module name="compressor-zoupi" />
+        <module name="user-interaction-zoupi" />
+        <module name="demo" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="coodinator-zoupi" target="20" />
+      <module name="demo (1) (com.example)" target="20" />
+      <module name="demo (2) (org.zoupi)" target="20" />
+      <module name="gateway-zoupi" target="20" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="compressor-zoupi" options="-parameters --enable-preview" />
+      <module name="coodinator-zoupi" options="-parameters" />
+      <module name="coordinator-zoupi" options="-parameters --enable-preview" />
+      <module name="demo" options="-parameters --enable-preview" />
+      <module name="demo (1) (com.example)" options="-parameters" />
+      <module name="demo (2) (org.zoupi)" options="-parameters" />
+      <module name="discovery-zoupi" options="-parameters" />
+      <module name="gateway-zoupi" options="-parameters" />
+      <module name="marshaller-zoupi" options="-parameters --enable-preview" />
+      <module name="pickup-zoupi" options="-parameters --enable-preview" />
+      <module name="sort-zoupi" options="-parameters --enable-preview" />
+      <module name="tags-zoupi" options="-parameters --enable-preview" />
+      <module name="user-interaction-zoupi" options="-parameters --enable-preview" />
+      <module name="user-zoupi" options="-parameters --enable-preview" />
+      <module name="video-zoupi" options="-parameters --enable-preview" />
+    </option>
+  </component>
+</project>

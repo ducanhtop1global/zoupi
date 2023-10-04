@@ -1,0 +1,18 @@
+server:
+  port: 4447
+eureka:
+  client:
+    service-url:
+      defaultZone: http://192.168.49.2:31508/eureka
+spring:
+  application:
+    name: video
+  data:
+    mongodb:
+      uri: mongodb+srv://ducanhtop1global:ducanhtop1global@zoupi.ml4hk63.mongodb.net/zoupi
+    redis:
+      password: 3OdJ8zINf1
+#  kafka:
+#    bootstrap-servers: ${KAFKA_BOOTSTRAPSERVER}
+#    consumer:
+#      auto-offset-reset: earliest

@@ -1,0 +1,13 @@
+server:
+  port: 2003
+spring:
+  application:
+    name: TestZoupi
+  data:
+    mongodb:
+      uri: mongodb+srv://ducanhtop1global:ducanhtop1global@zoupi.ml4hk63.mongodb.net/zoupi-lite
+#  kafka:
+#    bootstrap-servers:
+#      - "localhost:29092"
+#    consumer:
+#      auto-offset-reset: earliest

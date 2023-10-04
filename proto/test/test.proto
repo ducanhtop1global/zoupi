@@ -1,0 +1,12 @@
+syntax = "proto3";
+option java_multiple_files=true;
+package org.zoupi.test;
+service TrainingGrpcZoupi {
+    rpc GetZoupi(ZoupiRequest) returns (ZoupiResponse);
+}
+message ZoupiRequest {
+    string msg = 1;
+}
+message ZoupiResponse {
+    string msg = 1;
+}

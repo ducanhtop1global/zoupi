@@ -1,0 +1,54 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: user-zoupi
+  name: user-zoupi
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: user-zoupi
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: user-zoupi
+    spec:
+      containers:
+      - image: kaitokito/user-zoupi
+        name: user-zoupi
+        resources: {}
+        env:
+          - name: DISCOVERY_URL
+            value: http://192.168.49.2:31508/eureka
+          - name: MONGODB_URI
+            value: mongodb+srv://ducanhtop1global:ducanhtop1global@zoupi.ml4hk63.mongodb.net/zoupi?retryWrites=true&w=majority
+          - name: REDIS_HOST
+            value: 10.96.225.120
+          - name: KAFKA_BOOTSTRAPSERVER
+            value: 10.103.230.111:9091
+          - name: REDIS_PASSWORD
+            value: 3OdJ8zINf1
+status: {}
+---
+apiVersion: v1
+kind: Service
+metadata:
+  creationTimestamp: null
+  labels:
+    app: user-zoupi
+  name: user-zoupi
+spec:
+  ports:
+  - name: 4446-4446
+    port: 4446
+    protocol: TCP
+    targetPort: 4446
+  selector:
+    app: user-zoupi
+  type: NodePort
+status:
+  loadBalancer: {}

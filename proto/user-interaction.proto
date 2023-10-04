@@ -1,0 +1,12 @@
+syntax = "proto3";
+package org.zoupi.interaction;
+option java_multiple_files=true;
+service Label {
+    rpc GetByIdUser(GetLabelByIdUserReq) returns (GetLabelByIdUserRes);
+}
+message  GetLabelByIdUserReq {
+    string id_user = 1;
+}
+message GetLabelByIdUserRes {
+    string labels =1;
+}

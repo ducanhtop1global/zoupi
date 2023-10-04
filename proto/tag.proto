@@ -1,0 +1,12 @@
+syntax = "proto3";
+package org.zoupi.tag;
+option java_multiple_files=true;
+service GetIdsByTag {
+    rpc GetIdsByTag(GetIdsByTagReq) returns (GetIdsByTagRes);
+}
+message GetIdsByTagReq {
+    string tag =1;
+}
+message GetIdsByTagRes {
+    string ids = 1;
+}

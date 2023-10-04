@@ -1,0 +1,21 @@
+syntax = "proto3";
+package org.zoupi.coordinator;
+option java_multiple_files=true;
+service Shards {
+    rpc InsertCategoryIfEmpty(InsertCategoryIfEmptyReq) returns (InsertCategoryIfEmptyRes);
+}
+service VideoView {
+    rpc Get(GetVideoViewReq) returns (GetVideoViewRes);
+}
+message GetVideoViewReq {
+    string id = 1;
+}
+message GetVideoViewRes {
+    int32 amount_view = 1;
+}
+message InsertCategoryIfEmptyReq {
+    string category = 1;
+}
+message InsertCategoryIfEmptyRes {
+    bool is_insert = 1;
+}

@@ -1,0 +1,17 @@
+server:
+  port: 4448
+eureka:
+  client:
+    service-url:
+      defaultZone: ${DISCOVERY_URL}
+spring:
+  application:
+    name: compressor
+  data:
+    redis:
+      host: ${REDIS_HOST}
+      password: ${REDIS_PASSWORD}
+  kafka:
+    bootstrap-servers: ${KAFKA_BOOTSTRAPSERVER}
+    consumer:
+      auto-offset-reset: earliest

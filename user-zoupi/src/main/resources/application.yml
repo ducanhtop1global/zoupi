@@ -1,0 +1,19 @@
+server:
+  port: 4446
+eureka:
+  client:
+    service-url:
+      defaultZone: ${DISCOVERY_URL}
+spring:
+  application:
+    name: user
+  data:
+    mongodb:
+      uri: ${MONGODB_URI}
+    redis:
+      host: ${REDIS_HOST}
+      password: ${REDIS_PASSWORD}
+  kafka:
+    bootstrap-servers: ${KAFKA_BOOTSTRAPSERVER}
+    consumer:
+      auto-offset-reset: earliest
